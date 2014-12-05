@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/idAddFriends"
+        android:icon="@drawable/ic_action_add_user"
+        android:showAsAction="always"
+        android:title="AddFriends">
+    </item>
+    <item
+        android:id="@+id/idRefresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always"
+        android:title="Refresh">
+    </item>
+    <item
+        android:id="@+id/idFriends"
+        android:title="Friends">
+    </item>
+    <item
+        android:id="@+id/idSettings"
+        android:title="Settings">
+    </item>
+
+</menu>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="de.haw.chatmobile.RegisterActivity" >
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPIN"
+        android:layout_centerVertical="true"
+        android:onClick="doRegister"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/editNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Nickname (public)" />
+
+    <EditText
+        android:id="@+id/editEMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNickName"
+        android:layout_alignRight="@+id/editNickName"
+        android:layout_below="@+id/editNickName"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="YourEmail (private)"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonRegister"
+        android:layout_alignLeft="@+id/editEMail"
+        android:ems="10"
+        android:hint="Your PIN"
+        android:inputType="numberPassword" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:defaultValue="Not registered!"
+        android:editable="false"
+        android:key="REGID"
+        android:summary="Not registered!"
+        android:title="Registration-ID" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_encrypt"
+        android:summaryOff="Messages not encyrpted"
+        android:summaryOn="Encryption activated"
+        android:title="Encryption" />
+
+</PreferenceScreen>
